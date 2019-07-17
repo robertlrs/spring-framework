@@ -137,7 +137,7 @@ configure(allprojects) { project ->
 		systemProperty("java.awt.headless", "true")
 		systemProperty("testGroups", project.properties.get("testGroups"))
 		systemProperty("io.netty.leakDetection.level", "paranoid")
-		useJUnitPlatform()
+//		useJUnitPlatform()
 		scanForTestClasses = false
 		include(["**/*Tests.class", "**/*Test.class"])
 		// Since we set scanForTestClasses to false, we need to filter out inner
